@@ -4,11 +4,11 @@
             style="margin: auto; padding:20px;">
             <p style="text-align: center;">Baseado em sua experiência no projeto
                 <b>{{ projeto.DescricaoProjeto }}</b>, qual a probabilidade de
-                você indicar a <span style="font-weight: bold; color:palevioletred">Fábrica de Software BH</span> para outros parceiros?</p>
+                você indicar a <span style="font-weight: bold; color:black">Fábrica de Software BH</span> para outros parceiros?</p>
             <div [style]="controlaEstadoDiv()">
                 <bar-rating [(rate)]="rate" [max]="10" [theme]="'square'"></bar-rating>
             </div>
-            <button class="btn btn-danger" (click)="enviaAvaliacao()" [disabled]="avaliacaoRealizada">Enviar</button><br><br>
+            <button class="btn btn-primary" (click)="enviaAvaliacao()" [disabled]="avaliacaoRealizada">Enviar</button><br><br>
             <p *ngIf="avaliacaoRealizada" style="color:orange"><b>Avaliação já respondida</b></p>
         </div>
     </div>
